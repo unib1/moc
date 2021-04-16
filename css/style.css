@@ -1,0 +1,324 @@
+@import url('../css/font.css');
+body, html{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    padding: 0;
+}
+:root{
+    /*theme colors*/
+    --text-grey: #3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    /*gradient color*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%,#2ce9fb 100%);
+    /*themes font*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+    --market: yellow;
+    --dark:  #343a40;
+}
+/* global classes*/
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+    font-family: var(--Abel);
+}
+.flex-row{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--Lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+h4{
+    font-family: var(--Josefin);
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+span{
+    font-family: var(--Abel);
+}
+.container{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: var(--text-grey);
+}
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+/*navbar*/
+header nav a, nav i{
+   color: white !important;
+
+}
+nav{
+    background-color: var(--text-grey) !important;
+    padding: 0 2rem;
+    overflow: hidden;
+
+}
+header nav button.btn{
+    padding: 0.5rem 2rem !important;
+    color: #F8CF61;
+}
+header nav img{
+    width: 100px;
+}
+header nav button.btn.create{
+    border: 1px solid #F8CF61;
+    border-radius: .3em;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    
+}
+/*
+.nav2{
+    padding: 0 !important;
+}
+.nav .nav-menu{
+    justify-content: space-between !important;
+}
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end !important;
+    padding: 1.7rem 0;
+}
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-grey);
+}
+.collapse{
+    height: 30rem;
+}
+.nav .nav-items{
+    display: flex !important;
+    margin: 0;
+    padding: 0;
+}
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+.nav .nav-items .singup{
+    padding: 1rem .5rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+}
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+}
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+.nav .nav-items .nav-link:hover a{
+    color: white;
+}
+.nav .social{
+    padding: 1.4rem 0;
+
+}
+.nav .social i{
+    padding: 0 .2rem;
+    font-size: 20px;
+}
+.nav .social i:hover{
+    color: #a1c4cf;
+}*/
+
+/* header section*/
+section#header {
+    background-color: #b8babd;
+}
+section#header .welcome{
+    margin: auto;
+}
+section#header .btn-yellow{
+    margin: 0 5px;
+    color: yellow;
+    border: 1px solid yellow;
+}
+section#featured{
+    margin: 3rem 0;
+}
+section .featured-main{
+    position: relative;
+    background-image: linear-gradient(rgba(29, 27, 27, 0.25),rgb(46,46,32, 0.88)), url(../img/banner-news-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    color: #ffffff;
+    border-radius: .5em;
+}
+section .featured-main-info{
+    position: absolute;
+    bottom: 5%;
+    margin: 0 10px;
+}
+section .featured-main-info a{
+    color: white;
+}
+.featured-icon i::before{
+    display: flex;
+    padding: 5px;
+    margin: 20px 10px;
+    font-size: 26px;
+    color: yellow;
+    border:5px solid yellow;
+    border-radius: 50%;
+}
+.featured-main-info .date p{
+    color: wheat ;
+}
+section .featured-card{
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);
+    height: 400px;
+    border-radius: .5em;
+}
+section .featured-card-info{
+    padding: 10px 20px;
+}
+img{
+    width: 100%;
+}
+.row{
+    margin: 1em 0 ;
+}
+/*main content*/
+
+
+.line-xs {
+    margin: 4px 0px 20px;
+    border-bottom: 3px solid rgb(238, 238, 238);
+}
+.line, .double-line {
+    clear: both;
+    position: relative;
+    width: 100%;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+.line-xs.line-market {
+    border-bottom-color: var(--market) !important;
+}
+.contact-icon{
+    font-size: 40px;
+}
+.line-xs.line-dark {
+    border-bottom-color: var(--dark) !important;
+}
+.btn-news.active{
+    background-color: yellow;
+}
+.btn-news{
+    background-color: #EFEFEF;
+    border-radius: .2em !important;
+    padding: 5px 20px !important;
+}
+
+/*footer*/
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+footer.footer .container >div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+footer.footer .container h2{
+    color: var(--white);
+}
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+footer.footer .newsletter .form-element input{
+    padding: .5rem .7rem;
+    border: none;
+    background: transparent;
+    color: var(--white);
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 72%;
+
+}
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+footer.footer .instagram div> img{
+    display: inline-block;
+    width: 25%;
+    height: 50%;
+    margin: .3rem .4rem;
+
+}
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin) ;
+}
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+footer.footer .move-up{
+    position: absolute;
+    right: 6%; 
+    top: 50%;
+}
+footer.footer .move-up span{
+color: var(--midnight);
+}
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
