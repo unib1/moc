@@ -82,9 +82,8 @@ nav{
     overflow: hidden;
 
 }
-header nav button.btn{
-    padding: 0.5rem 2rem !important;
-    color: #F8CF61;
+header nav button.btn a{
+    color: #F8CF61 !important;
 }
 header nav img{
     width: 100px;
@@ -96,74 +95,6 @@ header nav button.btn.create{
     cursor: pointer;
     
 }
-/*
-.nav2{
-    padding: 0 !important;
-}
-.nav .nav-menu{
-    justify-content: space-between !important;
-}
-.nav .toggle-collapse{
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
-    display: none;
-}
-.nav .toggle-collapse .toggle-icons{
-    display: flex;
-    justify-content: flex-end !important;
-    padding: 1.7rem 0;
-}
-.nav .toggle-collapse .toggle-icons i{
-    font-size: 1.4rem;
-    color: var(--text-grey);
-}
-.collapse{
-    height: 30rem;
-}
-.nav .nav-items{
-    display: flex !important;
-    margin: 0;
-    padding: 0;
-}
-.nav .nav-items .nav-link{
-    padding: 1.6rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-family: var(--Abel);
-}
-.nav .nav-items .singup{
-    padding: 1rem .5rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-family: var(--Abel);
-}
-.nav .nav-brand a{
-    font-size: 1.6rem;
-    padding: 1rem 0;
-    text-decoration: none;
-    display: block;
-    font-family: var(--Lexend);
-    font-size: 1.6rem;
-}
-.nav .nav-items .nav-link:hover{
-    background-color: var(--midnight);
-}
-.nav .nav-items .nav-link:hover a{
-    color: white;
-}
-.nav .social{
-    padding: 1.4rem 0;
-
-}
-.nav .social i{
-    padding: 0 .2rem;
-    font-size: 20px;
-}
-.nav .social i:hover{
-    color: #a1c4cf;
-}*/
 
 /* header section*/
 section#header {
@@ -321,4 +252,25 @@ color: var(--midnight);
 footer.footer .move-up span:hover{
     color: var(--white);
     cursor: pointer;
+}
+
+
+
+/*login page*/
+section .btn-sing{
+    background-color: #1C1F23;
+    border-radius: 5px;
+    color: #ffffff;
+}
+section#login{
+    margin: 2em 0;
+}
+section#login .login input{
+    margin: .5em;
+    padding: 1em;
+    width: 400px;
+    position: relative;
+}
+section#login .login label{
+    margin: .2em;
 }
