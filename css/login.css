@@ -1,3 +1,105 @@
+@import url('../css/font.css');
+body, html{
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x:hidden;
+    padding: 0;
+}
+:root{
+    /*theme colors*/
+    --text-grey: #3f4954;
+    --text-light:#686666da;
+    --bg-color:#0f0f0f;
+    --white:#ffffff;
+    --midnight:#104f55;
+    /*gradient color*/
+    --sky: linear-gradient(120deg, #a1c4fd 0%,#2ce9fb 100%);
+    /*themes font*/
+    --Abel:'Abel',cursive;
+    --Anton:'Anton',cursive;
+    --Josefin:'Josefin',cursive;
+    --Lexend:'Lexend',cursive;
+    --Livvic:'Livvic',cursive;
+    --market: yellow;
+    --dark:  #343a40;
+}
+/* global classes*/
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+    font-family: var(--Abel);
+}
+.flex-row{
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--Lexend);
+}
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+h4{
+    font-family: var(--Josefin);
+}
+.container-fluid button.btn{
+    padding: 0rem 3rem;
+}
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+span{
+    font-family: var(--Abel);
+}
+.container{
+    margin: 0 5vw;
+}
+.text-gray{
+    color: var(--text-grey);
+}
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+/*navbar*/
+header nav a, nav i{
+   color: white !important;
+
+}
+nav{
+    background-color: var(--text-grey) !important;
+    padding: 0 1.5rem;
+    overflow: hidden;
+
+}
+header nav button.btn a{
+    color: #F8CF61 !important;
+}
+header nav img{
+    width: 100px;
+}
+header nav button.btn.create{
+    border: 1px solid #F8CF61;
+    border-radius: .3em;
+    font-family: var(--Livvic);
+    cursor: pointer;
+    
+}
+
+
 .form-box{
     width: 380px;
     height: 480px;
@@ -5,6 +107,7 @@
     margin: 6% auto;
     background-color: #fff;
     padding: 5px;
+    overflow: hidden;
 }
 .button-box{
     width: 220px;
@@ -76,7 +179,7 @@
 span{
     color: #777;
     font-size: 12px;
-    bottom: 68px;
+    bottom: 36px;
     position: absolute;
 }
 #login{

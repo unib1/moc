@@ -5,18 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/all.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar sticky-top navbar-light">
+            <div class="container-fluid">
+                <h1 class="fs-1"><a href="./index.html" class="navbar-brand"><img src="../img/logo.png" alt=""></a></h1>
+                <div class="d-flex">
+                    <form class="form-inline d-flex" action="https://www.w3schools.com/action_page.php">
+                        <input class="form-control mr-sm-2 me-3" type="text" placeholder="Search">
+                        <i class="fas fa-search me-2 mt-2 fs-5"></i>
+                    </form>
+                    <button class="btn"><a href="./register.html">LogIn</a></button>
+                    <button class="btn create"><a href="./register.html">Sing Up</a> </button>
+                </div>
+            </div>
+            <div class="container-fluid">
+                    <div>
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div>
+                        <a href="#">About Us</a>
+                    </div>
+                    <div>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div>
+                        <a href="#"> How To Use</a>
+                    </div>
+                    <div>
+                        <a href="./category.html">Category</a>
+                    </div>
+                    <div>
+                        <a href="#">Archive</a>
+                    </div>
+                    <div>
+                        <a href="#">Psges</a>
+                    </div>
+            </div>
+        </nav>
+    </header>
     <main>
-        <section>
+        <section >
             <div class="hero">
                 <div class="form-box">
                     <div class="button-box">
                         <div id="btn"></div>
-                        <button type="button" class="toggle-btn">LogIn</button>
-                        <button type="button" class="toggle-btn">Register</button>
+                        <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
                     </div>
                     <div class="social-icons">
                         <i class="fab fa-facebook-f"></i>
@@ -41,5 +80,73 @@
             </div> 
         </section>
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Dolorum, magnam? Nemo possimus ullam obcaecati
+                    ipsam perferendis similique quaerat minima numquam.
+                </p>
+            </div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="E-mail">
+                    <span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram">
+                <h2>Instagram</h2>
+                <div  class="flex-row">
+                    <img src="./img/instagram/thumb-card3.png" alt="">
+                    <img src="./img/instagram/thumb-card4.png" alt="">
+                    <img src="./img/instagram/thumb-card5.png" alt="">
+                </div>
+                <div  class="flex-row">
+                    <img src="./img/instagram/thumb-card6.png" alt="">
+                    <img src="./img/instagram/thumb-card7.png" alt="">
+                    <img src="./img/instagram/thumb-card8.png" alt="">
+                </div>
+            </div>
+            <div class="follow">
+                <h2>Follow Us</h2>
+                <p>let us be social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright 2019 All rights reserved | made by 
+                <a href="youtube.com" target="black">CHI KARL Jr.</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i> </span>
+        </div>
+    </footer>
+    <script>
+        var x = document.getElementById('login')
+        var y = document.getElementById('register')
+        var z = document.getElementById('btn')
+
+        function login(){
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0"
+        }
+        function register(){
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+
+    </script>
 </body>
 </html>
