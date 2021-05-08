@@ -49,35 +49,8 @@
         </nav>
     </header>
     <main>
-        <section >
-            <div class="hero">
-                <div class="form-box">
-                    <div class="button-box">
-                        <div id="btn"></div>
-                        <button type="button" class="toggle-btn" onclick="login()">LogIn</button>
-                        <button type="button" class="toggle-btn" onclick="register()">Register</button>
-                    </div>
-                    <div class="social-icons">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                    </div>
-                    <form action="Post" class="input-group" id="login">
-                        <input type="text" class="input-field" placeholder="UserName" required>
-                        <input type="text" class="input-field" placeholder="Password" required>
-                        <input type="checkbox" class="chech-box"><span>Remember Password</span>
-                        <button type="submit" class="submit-btn">Log In</button>
-                    </form>
-                    <form action="Post" class="input-group" id="register">
-                        <input type="text" class="input-field" placeholder="UserName" required>
-                        <input type="email" class="input-field" placeholder="Email" required>
-                        <input type="text" class="input-field" placeholder="Password" required>
-                        <input type="checkbox" class="chech-box"><span>I agree to the terms and conditons</span>
-                        <button type="submit" class="submit-btn">Log In</button>
-                    </form>
-                </div>
-                
-            </div> 
+        <section>
+            <div class="info"></div>
         </section>
     </main>
     <footer class="footer">
@@ -131,22 +104,5 @@
             <span><i class="fas fa-arrow-circle-up fa-2x"></i> </span>
         </div>
     </footer>
-    <script>
-        var x = document.getElementById('login')
-        var y = document.getElementById('register')
-        var z = document.getElementById('btn')
-
-        function login(){
-            x.style.left = "50px"
-            y.style.left = "450px"
-            z.style.left = "0"
-        }
-        function register(){
-            x.style.left = "-400px"
-            y.style.left = "50px"
-            z.style.left = "110px"
-        }
-
-    </script>
 </body>
 </html>
