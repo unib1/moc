@@ -363,3 +363,20 @@ span{
 #register{
     left: 450px;
 }
+.profile-pic{
+    justify-self: self-end !important;
+}
+.profile-pic img{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+p.main-blog{
+    text-align: center;
+}
+
+.row.main-cat{
+    margin-top: 0px;
+    padding: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -53,7 +53,7 @@ function displayMenuItems(menuItems){
       <img src=${item.img} alt=${item.title} class="photo" />
     </div>
     <div class="col-8" >
-        <h3><a href="">${item.title}</a></h3>
+        <h3><a href="../pages/post.html">${item.title}</a></h3>
         <p><i><a href="#">by ${item.author}</a>  ${item.date}</i></p>
         <p>${item.desc}</p>
     </div>
